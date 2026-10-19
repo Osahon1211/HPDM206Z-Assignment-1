@@ -1,0 +1,56 @@
+HOSPITAL DATABASE - PSEUDOCODE
+
+START
+
+1. CREATE DATABASE
+   Create a database called hospital_database.
+
+2. CREATE TABLES
+   Create Hospitals table.
+   Create Doctors table.
+   Create Patients table.
+   Create Prescriptions table.
+
+   Assign primary keys to identify each record.
+   Assign foreign keys to connect related tables.
+
+3. IMPORT DATA
+   Import hospitals.csv into Hospitals.
+   Import doctors.csv into Doctors.
+   Import patients.csv into Patients.
+   Import prescriptions.csv into Prescriptions.
+
+4. QUERY 1 - FIND DOCTORS AT A HOSPITAL
+   INPUT hospital ID.
+   Find doctors assigned to that hospital.
+   DISPLAY doctor names.
+
+5. QUERY 2 - FIND PATIENT PRESCRIPTIONS
+   INPUT patient ID.
+   Find prescriptions belonging to that patient.
+   Sort prescriptions by date, newest first.
+   DISPLAY prescription details.
+
+6. QUERY 3 - FIND PRESCRIPTIONS BY DOCTOR
+   INPUT doctor ID.
+   Find prescriptions issued by that doctor.
+   DISPLAY prescription details.
+
+7. QUERY 4 - ADD NEW PATIENT
+   INPUT patient details and assigned doctor ID.
+   Check that the doctor exists.
+   Insert patient into Patients table.
+   DISPLAY confirmation.
+
+8. QUERY 5 - DOCTOR WITH MOST PRESCRIPTIONS
+   Count prescriptions issued by each doctor.
+   Sort counts from highest to lowest.
+   DISPLAY doctor with highest count.
+
+9. QUERY 6 - DOCTORS AT LARGEST HOSPITAL
+   Find the highest number of beds in Hospitals.
+   Find hospitals with that number of beds.
+   Find doctors assigned to those hospitals.
+   DISPLAY doctor names and hospital details.
+
+END
